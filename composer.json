@@ -1,0 +1,29 @@
+{
+  "name": "mithun12000/yii2-manage",
+  "description": "User management modules for Yii2",
+  "keywords": ["user","permission","group", "acl", "advanced", "yii2"],
+  "homepage": "https://github.com/mithun12000/yii2-usermanage",
+  "type": "yii2-extension",
+  "license": "GNU",
+  "authors": [
+    {
+      "name": "Mithun Mandal",
+      "email": "mithun12000@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/mithun12000/yii2-usermanage/issues",
+    "source": "https://github.com/mithun12000/yii2-usermanage"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "mithun12000/yii2-urlasset":"*",
+    "mithun12000/yii2-metadata":"*"
+  },
+  "autoload": {
+    "psr-4": {
+      "mithun\\usermanage\\": "src/"
+    }
+  }
+}
