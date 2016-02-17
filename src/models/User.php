@@ -74,7 +74,7 @@ class User extends AppActiveRecord implements UserIdentityInterface
      */
     public static function findIdentityByAccessToken($token, $type = NULL)
     {
-        $identity;
+        //$identity;
         if($type == 'HttpBasicAuth'){
             $identity =  static::findOne(['token' => $token]);
         }else{
