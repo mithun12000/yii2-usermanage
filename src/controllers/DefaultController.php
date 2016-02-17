@@ -14,6 +14,7 @@ use yii\filters\VerbFilter;
  */
 class DefaultController extends Controller
 {
+    public $layout = "//blank";
     /**
      * @inheritdoc
      */
@@ -41,29 +42,6 @@ class DefaultController extends Controller
                 ],
             ],
         ];
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-        ];
-    }
-
-    public function actionIndex()
-    {
-        $this->view->params['breadcrumbs'] = [ 
-            [
-                'label' => 'Dashboard'
-            ]
-        ];
-        $this->view->params['pagename'] = 'Dashboard';
-        return $this->render('index');
     }
 
     public function actionLogin()
