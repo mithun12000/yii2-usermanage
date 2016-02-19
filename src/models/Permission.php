@@ -3,7 +3,7 @@
 namespace mithun\usermanage\models;
 
 use Yii;
-use common\component\AppActiveRecord;
+use mithun\usermanage\component\UserActiveRecord;
 
 /**
  * This is the model class for table "tc_permissions".
@@ -23,7 +23,7 @@ use common\component\AppActiveRecord;
  * @property Group $group
  * @property User $user
  */
-class Permission extends AppActiveRecord
+class Permission extends UserActiveRecord
 {
     /**
      * @inheritdoc

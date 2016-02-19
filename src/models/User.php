@@ -5,7 +5,7 @@ use Yii;
 use yii\base\NotSupportedException;
 use yii\db\ActiveRecord;
 use yii\helpers\Security;
-use common\component\AppActiveRecord;
+use mithun\usermanage\component\UserActiveRecord;
 #use yii\web\IdentityInterface;
 
 /**
@@ -23,7 +23,7 @@ use common\component\AppActiveRecord;
  * @property integer $updated_at
  * @property string $password write-only password
  */
-class User extends AppActiveRecord implements UserIdentityInterface
+class User extends UserActiveRecord implements UserIdentityInterface
 {
     use PermissionTrait;
     

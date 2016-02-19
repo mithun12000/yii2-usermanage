@@ -5,7 +5,7 @@ namespace mithun\usermanage\models;
 use Yii;
 use yii\db\Expression;
 use yii\helpers\ArrayHelper;
-use common\component\AppActiveRecord;
+use mithun\usermanage\component\UserActiveRecord;
 /**
  * This is the model class for table "tc_group".
  *
@@ -15,7 +15,7 @@ use common\component\AppActiveRecord;
  * @property string $status
  * @property string $createdon
  */
-class Group extends AppActiveRecord
+class Group extends UserActiveRecord
 {
     use PermissionTrait;
     
