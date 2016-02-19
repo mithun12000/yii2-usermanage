@@ -14,7 +14,7 @@ class m130524_201442_init extends \yii\db\Migration
         echo " Creating User Table \n";
 
         $this->createTable('{{%user}}', [
-            'id' => Schema::TYPE_PK,
+            'Id' => Schema::TYPE_PK,
             'username' => Schema::TYPE_STRING . ' NOT NULL',
             'auth_key' => Schema::TYPE_STRING . '(32) NOT NULL',
             'password_hash' => Schema::TYPE_STRING . ' NOT NULL',

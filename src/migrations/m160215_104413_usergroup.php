@@ -14,7 +14,7 @@ class m160215_104413_usergroup extends Migration
         }
 
         $this->createTable('{{%group}}', [
-            'id' => Schema::TYPE_PK,
+            'Id' => Schema::TYPE_PK,
             'name' => Schema::TYPE_STRING . ' NOT NULL',
             'parentId' => Schema::TYPE_INTEGER . ' NOT NULL',
             'ip' => Schema::TYPE_STRING . ' NOT NULL',
@@ -27,7 +27,7 @@ class m160215_104413_usergroup extends Migration
         ], $tableOptions);
 
         $this->createTable('{{%user_group_map}}', [
-            'id' => Schema::TYPE_PK,
+            'Id' => Schema::TYPE_PK,
             'userId' => Schema::TYPE_INTEGER . ' NOT NULL',
             'groupId' => Schema::TYPE_INTEGER . ' NOT NULL',
         ], $tableOptions);

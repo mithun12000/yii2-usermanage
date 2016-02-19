@@ -14,7 +14,7 @@ class m160215_104422_usergrouppermission extends Migration
         }
 
         $this->createTable('{{%permissions}}', [
-            'id' => Schema::TYPE_PK,
+            'Id' => Schema::TYPE_PK,
             'userId' => Schema::TYPE_INTEGER,
             'groupId' => Schema::TYPE_INTEGER,
             'module' => Schema::TYPE_STRING . '(50) NOT NULL',
