@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * GroupController implements the CRUD actions for group model.
  */
-class TrashSysparamsController extends AccessController
+class SysparamsTrashController extends AccessController
 {
     public function behaviors()
     {
