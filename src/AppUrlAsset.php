@@ -38,7 +38,14 @@ class AppUrlAsset extends UrlAsset
                         'linkOptions'=>[
                             'class' => 'fa fa-group',
                         ]
-                    ], 
+                    ],
+                    [
+                        'label' => 'System Params',
+                        'url' => ['/usermanage/sysparams/index'],
+                        'linkOptions'=>[
+                            'class' => 'fa fa-cubes',
+                        ]
+                    ],
                     [
                         'label' => 'User Trash', 
                         'url' => ['/usermanage/user-trash/index'],
@@ -51,6 +58,13 @@ class AppUrlAsset extends UrlAsset
                         'url' => ['/usermanage/group-trash/index'],
                         'linkOptions'=>[
                             'class' => 'fa fa-trash-o',
+                        ]
+                    ],
+                    [
+                        'label' => 'System Params Trash',
+                        'url' => ['/usermanage/sysparams-trash/index'],
+                        'linkOptions'=>[
+                            'class' => 'fa fa-cubes',
                         ]
                     ],
                 ]

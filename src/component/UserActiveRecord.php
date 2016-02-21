@@ -145,4 +145,20 @@ class UserActiveRecord extends \yii\db\ActiveRecord
         }
         return $isSave;
     }
+
+    public function getStatuses(){
+        return $this->statusnames;
+    }
+
+    public function getStatusName() {
+        return $this->statusnames[$this->status];
+    }
+
+    public function getCreateTime() {
+        return date('D, jS M Y \a\t g:ia',  strtotime($this->createdOn));
+    }
+
+    public function getUpdateTime() {
+        return date('D, jS M Y \a\t g:ia',  strtotime($this->updatedOn));
+    }
 }
