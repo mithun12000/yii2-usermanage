@@ -14,7 +14,7 @@ use yii\helpers\ArrayHelper;
 ?>
 <div class="user-form">
     <?php $form = ActiveForm::begin(); ?>
-    <?= $form->field($model, 'groupMap')->checkboxList(ArrayHelper::map(\common\models\Group::find()
+    <?= $form->field($model, 'groupMap')->checkboxList(ArrayHelper::map(\mithun\usermanage\models\Group::find()
                              ->where(['status' => '1'])->all(),'Id','name'),[
                                  //'tag'  => 'ul',
                                  'class'    => 'list-group',

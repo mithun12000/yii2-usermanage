@@ -53,7 +53,7 @@ use yii\adminUi\widget\Callout;
     
     <?= $form->field($model, 'phone')->textInput(['maxlength' => 10]) ?>
 
-    <?= $form->field($model, 'groupId')->dropDownList(ArrayHelper::merge(['Select'=>'Select'], ArrayHelper::map(\common\models\Group::find()
+    <?= $form->field($model, 'groupId')->dropDownList(ArrayHelper::merge(['Select'=>'Select'], ArrayHelper::map(\mithun\usermanage\models\Group::find()
                              ->where(['status' => '1'])->all(),'Id','name'))) ?>
     
     <div class="form-group">
