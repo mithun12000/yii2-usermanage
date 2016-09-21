@@ -30,6 +30,21 @@ class m160215_104422_usergrouppermission extends Migration
             'updatedBy' => Schema::TYPE_INTEGER . ' NOT NULL',
 
         ], $tableOptions);
+
+        $this->insert('{{%permissions}}', [
+            'groupId' => 1,
+            'module' => '*',
+            'controller' => '*',
+            'action' => '*',
+            'type' => 1,
+            'ip' => '127.0.0.1',
+            'status' => 1,
+            'createdOn' => date('Y-m-d H:i:s'),
+            'updatedOn' => date('Y-m-d H:i:s'),
+            'createdBy' => 1,
+            'updatedBy' => 1,
+
+        ]);
     }
 
     public function down()
